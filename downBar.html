@@ -1,17 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css1.css" type="text/css"> 
+    <script type="text/javascript">
+    window.onload=function(){
+    	var oDiv1=document.getElementById('btn');
+    	var ul=document.getElementById('ul1');
+    	oDiv1.onclick=function(){
+    		if(ul.style.display=='block')
+    			ul.style.display='none';
+    		else
+    			ul.style.display='block'
+    	}
+    }
+    	function toGreen(){
+    		var oDiv1=document.getElementById('div1');
+    		oDiv1.className='box';
+    	}
+    	function toRed(){
+    		var oDiv1=document.getElementById('div1');
+    		oDiv1.className='';
+    	}
+    </script>
 </head>
 <body>
-<div id="box">
-	<p id="btn">输入法</p>
-	<ul id="ul1" style="display:block;">
-		<li><a href="#">手写</li>
-		<li><a href="#">拼音</li>
-		<li><a href="#">关闭</li>
-	</ul>
-</div>
+    <p id="btn">隐藏/显示</p>
+    <ul id="ul1" style="display:block">
+    	<li><a href="#">123</li>
+    	<li><a href="#">123</li>
+    	<li><a href="#">123</li>
+    </ul>
+    
 </body>
 </html>

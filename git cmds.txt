@@ -1,0 +1,22 @@
+//删除tag
+git tag -d this(tag name)
+//push deled tag
+git push origin :this(tag name)
+//增加tag
+git tag -a this(tag name) (ver hashcode) -m '(msg)'
+
+//local modified file
+1. git add (filename)
+2. git commit -m '(msg)'
+3. git push origin master
+
+
+
+
+
+//第一次
+git config --global user.name "Andy"
+git config --global user.email ""
+git config --list
+git init
+	

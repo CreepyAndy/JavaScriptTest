@@ -1,0 +1,12 @@
+1、在标签内部加JavaScript代码,行间样式
+eg <input type="checkbox" onmouseover="document.getElementById('div1').style//（claaName也可）.display='block'" />
+//<label></label>分组
+
+2.引入，link标签。
+<link rel="stylesheet" type="text/css" href="">
+
+3.代码分离
+在头文件中写<script type="text/javascript">
+function toGreen(){};
+
+在行间写 "toGreen()"
