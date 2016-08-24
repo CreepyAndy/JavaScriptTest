@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style type="text/css">
+		input {background: white;}
+		.active {background:yellow;}
+	</style>
+	<script type="text/javascript">
+		window.onload=function(){
+			var aBtn=document.getElementsByTagName('input');
+			var i=0;
+			for (i=0;i<aBtn.length;i++) {
+				aBtn[i].onclick=function(){
+					for (var j = 0; j < aBtn.length; j++) {
+						aBtn[j].className='';
+					}
+					this.className='active';
+				}
+			}
+		}
+	</script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input class="active" type="button" value="1">
+	<input type="button" value="2">
+	<input type="button" value="3">
+</body>
+</html>
